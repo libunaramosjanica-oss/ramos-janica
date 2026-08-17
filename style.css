@@ -1,0 +1,781 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    min-height: 100vh;
+
+    background:
+        #f4f0ec;
+
+    color:
+        #252b3d;
+
+    padding:
+        35px 20px;
+
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    width: 95%;
+
+    max-width:
+        1100px;
+
+    margin:
+        0 auto;
+
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom:
+        28px;
+
+}
+
+
+.logo {
+
+    width: 44px;
+
+    height: 44px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 13px;
+
+    background:
+        #d9d1e8;
+
+    color:
+        #354568;
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+}
+
+
+.header h1 {
+
+    font-size:
+        23px;
+
+    font-weight:
+        750;
+
+    color:
+        #252b3d;
+
+}
+
+
+.header p {
+
+    margin-top:
+        2px;
+
+    font-size:
+        12px;
+
+    color:
+        #8a8580;
+
+}
+
+
+/* =====================================================
+   MAIN MONITOR
+===================================================== */
+
+.monitor {
+
+    background:
+        #fbfaf8;
+
+    border:
+        1px solid #ddd8d2;
+
+    border-radius:
+        24px;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        0 12px 35px rgba(48, 48, 55, 0.06);
+
+}
+
+
+/* =====================================================
+   INTERVAL SECTION
+===================================================== */
+
+.interval-section {
+
+    text-align:
+        center;
+
+    padding:
+        32px 25px 27px;
+
+    border-bottom:
+        1px solid #dfdad5;
+
+}
+
+
+.label {
+
+    display:
+        block;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2px;
+
+    color:
+        #85818a;
+
+    margin-bottom:
+        12px;
+
+}
+
+
+/* =====================================================
+   SECONDS ROW
+===================================================== */
+
+.seconds-row {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        10px;
+
+}
+
+
+.seconds-row input {
+
+    width:
+        125px;
+
+    height:
+        55px;
+
+    border:
+        none;
+
+    border-bottom:
+        2px solid #52668f;
+
+    outline:
+        none;
+
+    background:
+        transparent;
+
+    text-align:
+        center;
+
+    font-size:
+        34px;
+
+    font-weight:
+        750;
+
+    color:
+        #2f406a;
+
+}
+
+
+.seconds-row input::placeholder {
+
+    color:
+        #c0bbb6;
+
+}
+
+
+.seconds {
+
+    font-size:
+        13px;
+
+    color:
+        #817c77;
+
+    margin-right:
+        8px;
+
+}
+
+
+/* =====================================================
+   APPLY
+===================================================== */
+
+#saveBtn {
+
+    height:
+        42px;
+
+    padding:
+        0 21px;
+
+    border:
+        none;
+
+    border-radius:
+        10px;
+
+    background:
+        #344773;
+
+    color:
+        white;
+
+    font-size:
+        12px;
+
+    font-weight:
+        750;
+
+    cursor:
+        pointer;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+#saveBtn:hover {
+
+    background:
+        #26375f;
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.status-line {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        8px;
+
+    margin-top:
+        18px;
+
+    font-size:
+        11px;
+
+    color:
+        #8a8580;
+
+}
+
+
+.status-dot {
+
+    width:
+        7px;
+
+    height:
+        7px;
+
+    border-radius:
+        50%;
+
+    background:
+        #7585a9;
+
+}
+
+
+#statusText {
+
+    color:
+        #566685;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.divider {
+
+    color:
+        #c4bfba;
+
+    margin:
+        0 3px;
+
+}
+
+
+.status-line strong {
+
+    color:
+        #40537d;
+
+    font-weight:
+        750;
+
+}
+
+
+/* =====================================================
+   RECORDS SECTION
+===================================================== */
+
+.records-section {
+
+    width:
+        100%;
+
+}
+
+
+/* =====================================================
+   RECORD HEADER
+===================================================== */
+
+.records-title {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding:
+        23px 27px;
+
+}
+
+
+.records-title h2 {
+
+    font-size:
+        21px;
+
+    color:
+        #292f41;
+
+}
+
+
+.records-title .label {
+
+    margin-bottom:
+        5px;
+
+}
+
+
+/* =====================================================
+   RECORD COUNT
+===================================================== */
+
+.record-total {
+
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    gap:
+        5px;
+
+    color:
+        #8b8680;
+
+    font-size:
+        11px;
+
+}
+
+
+.record-total strong {
+
+    font-size:
+        19px;
+
+    color:
+        #344773;
+
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-container {
+
+    width:
+        100%;
+
+    overflow-x:
+        auto;
+
+}
+
+
+table {
+
+    width:
+        100%;
+
+    min-width:
+        700px;
+
+    border-collapse:
+        collapse;
+
+}
+
+
+/* =====================================================
+   TABLE HEADER
+===================================================== */
+
+thead {
+
+    background:
+        #2d3f69;
+
+    color:
+        white;
+
+}
+
+
+th {
+
+    padding:
+        14px 16px;
+
+    text-align:
+        center;
+
+    font-size:
+        10px;
+
+    letter-spacing:
+        1px;
+
+    font-weight:
+        750;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+/* =====================================================
+   TABLE BODY
+===================================================== */
+
+td {
+
+    padding:
+        14px 16px;
+
+    text-align:
+        center;
+
+    border-bottom:
+        1px solid #e5e1dd;
+
+    color:
+        #555d6d;
+
+    font-size:
+        12px;
+
+}
+
+
+tbody tr {
+
+    background:
+        #ffffff;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+tbody tr:nth-child(even) {
+
+    background:
+        #f7f5f2;
+
+}
+
+
+/* =====================================================
+   NEWEST RECORD
+===================================================== */
+
+tbody tr.newest {
+
+    background:
+        #dfe7f5;
+
+    box-shadow:
+        inset 4px 0 #344773;
+
+}
+
+
+tbody tr.newest td {
+
+    color:
+        #2e416e;
+
+    font-weight:
+        700;
+
+}
+
+
+/* =====================================================
+   HOVER
+===================================================== */
+
+tbody tr:not(.empty-row):hover {
+
+    background:
+        #e9edf5;
+
+}
+
+
+/* =====================================================
+   EMPTY
+===================================================== */
+
+.empty-row td {
+
+    padding:
+        50px 20px;
+
+    color:
+        #9a958f;
+
+    font-style:
+        italic;
+
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    text-align:
+        center;
+
+    padding-top:
+        22px;
+
+    color:
+        #9b9690;
+
+    font-size:
+        10px;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding:
+            20px 10px;
+
+    }
+
+
+    .page {
+
+        width:
+            100%;
+
+    }
+
+
+    .monitor {
+
+        border-radius:
+            18px;
+
+    }
+
+
+    .seconds-row {
+
+        flex-wrap:
+            wrap;
+
+    }
+
+
+    .seconds-row input {
+
+        width:
+            110px;
+
+    }
+
+
+    .records-title {
+
+        padding:
+            20px;
+
+    }
+
+
+    .interval-section {
+
+        padding:
+            27px 15px 24px;
+
+    }
+
+}
+
+
+/* =====================================================
+   SMALL PHONE
+===================================================== */
+
+@media (max-width: 450px) {
+
+    .seconds-row {
+
+        gap:
+            7px;
+
+    }
+
+
+    .seconds-row input {
+
+        width:
+            100px;
+
+        font-size:
+            29px;
+
+    }
+
+
+    .seconds {
+
+        font-size:
+            12px;
+
+    }
+
+
+    #saveBtn {
+
+        padding:
+            0 16px;
+
+    }
+
+
+    .records-title h2 {
+
+        font-size:
+            18px;
+
+    }
+
+}
