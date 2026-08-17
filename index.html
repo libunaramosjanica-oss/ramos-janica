@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Jancal Realtime Monitor</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <main class="page">
+
+
+        <!-- ========================================= -->
+        <!-- HEADER -->
+        <!-- ========================================= -->
+
+        <header class="header">
+
+            <div class="logo">
+                J
+            </div>
+
+            <div>
+
+                <h1>
+                    Activity 2
+                </h1>
+
+                <p>
+                    Janica Libuna
+                </p>
+
+            </div>
+
+        </header>
+
+
+
+        <!-- ========================================= -->
+        <!-- MAIN MONITOR -->
+        <!-- ========================================= -->
+
+        <section class="monitor">
+
+
+            <!-- ===================================== -->
+            <!-- COLLECTION INTERVAL -->
+            <!-- ===================================== -->
+
+            <div class="interval-section">
+
+                <div class="seconds-row">
+
+                    <input
+                        type="number"
+                        id="interval"
+                        min="1"
+                        placeholder="10"
+                    >
+
+                    <span class="seconds">
+                        seconds
+                    </span>
+
+
+                    <button id="saveBtn">
+                        Apply
+                    </button>
+
+                </div>
+
+
+                <div class="status-line">
+
+                    <span class="status-dot"></span>
+
+                    <span id="statusText">
+                        READY
+                    </span>
+
+                    <span class="divider">
+                        |
+                    </span>
+
+                    <span>
+                        Current:
+                    </span>
+
+                    <strong>
+                        <span id="currentInterval">
+                            —
+                        </span>
+                        sec
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ===================================== -->
+            <!-- REALTIME RECORDS -->
+            <!-- ===================================== -->
+
+            <div class="records-section">
+
+
+                <div class="records-title">
+
+                    <div>
+
+                        <span class="label">
+                            LIVE FEED
+                        </span>
+
+                        <h2>
+                            Realtime Records
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- ================================= -->
+                <!-- DATA TABLE -->
+                <!-- ================================= -->
+
+                <div class="table-container">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Time
+                                </th>
+
+                                <th>
+                                    Float
+                                </th>
+
+                                <th>
+                                    Integer
+                                </th>
+
+                                <th>
+                                    String
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="sensorTable">
+
+                            <tr class="empty-row">
+
+                                <td colspan="5">
+                                    Waiting for realtime data...
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ========================================= -->
+        <!-- FOOTER -->
+        <!-- ========================================= -->
+
+        <footer>
+
+            Jancal • Realtime Environment Logger
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- ============================================= -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================================= -->
+
+    <script
+        type="module"
+        src="script.js"
+    ></script>
+
+
+</body>
+
+</html>
